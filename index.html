@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛡️ PhishGuard Pro - Advanced Phishing Detector</title>
+
+    <!-- Fonts + Icons (must stay inside head) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="floating-badge" onclick="loadDemo()">
+    <i class="fas fa-bolt"></i> Demo Message
+</div>
+
+<div class="container">
+    <div class="header">
+        <div class="logo">🛡️</div>
+        <h1>PhishGuard Pro</h1>
+        <p class="subtitle">
+            Advanced phishing language detector for emails, SMS, and chats. Analyses emotional triggers, financial terms & malicious links with visual risk analytics.
+        </p>
+    </div>
+
+    <div class="input-section">
+        <textarea id="message" placeholder="Paste suspicious email, SMS or chat message here...
+
+Example:
+URGENT: Your account is SUSPENDED. Verify your identity IMMEDIATELY to avoid permanent BLOCK.
+Click here to restore access: http://secure-update-paypal.com/login
+"></textarea>
+
+        <div class="button-group">
+            <button class="btn btn-primary" onclick="analyze()">
+                <i class="fas fa-shield-halved"></i> Analyze
+            </button>
+            <button class="btn btn-secondary" onclick="clearAll()">
+                <i class="fas fa-eraser"></i> Clear
+            </button>
+            <button class="btn btn-demo" onclick="loadDemo()">
+                <i class="fas fa-wand-magic-sparkles"></i> Load Demo
+            </button>
+        </div>
+    </div>
+
+    <div id="output" class="output-card"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
