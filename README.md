@@ -2,8 +2,6 @@
 
 PhishGuard Pro is a browser-based cybersecurity tool that analyzes suspicious messages (emails, SMS, chats) and detects phishing attempts using psychological and linguistic patterns.
 
-Developed during **Hack The Hunter Competition (Telekinesis 2026)** organized by the E&TC Department at **K. K. Wagh Institute of Engineering Education and Research**.
-
 ---
 
 ## Project Overview
